@@ -19,11 +19,13 @@ public class SecondActivity extends BaseNavigationActivity implements View.OnCli
         disableButtons();
     }
 
-    private void disableButtons() {
+    @Override
+    protected void disableButtons() {
         secondButton.setEnabled(false);
     }
 
-    private void setOnClickListeners() {
+    @Override
+    protected void setOnClickListeners() {
         firstButton.setOnClickListener(this);
         thirdButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);

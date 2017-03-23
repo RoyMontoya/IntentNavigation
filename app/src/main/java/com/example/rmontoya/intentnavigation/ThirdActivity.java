@@ -19,12 +19,14 @@ public class ThirdActivity extends BaseNavigationActivity implements View.OnClic
         disableButtons();
     }
 
-    private void disableButtons() {
+    @Override
+    protected void disableButtons() {
         thirdButton.setEnabled(false);
         nextButton.setEnabled(false);
     }
 
-    private void setOnClickListeners() {
+    @Override
+    protected void setOnClickListeners() {
         firstButton.setOnClickListener(this);
         secondButton.setOnClickListener(this);
         previousButton.setOnClickListener(this);

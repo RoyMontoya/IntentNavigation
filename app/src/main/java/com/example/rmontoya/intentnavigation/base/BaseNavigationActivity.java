@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.example.rmontoya.intentnavigation.R;
 
-public class BaseNavigationActivity extends AppCompatActivity {
+public abstract class BaseNavigationActivity extends AppCompatActivity {
     protected TextView titleTextView;
     protected Button firstButton;
     protected Button secondButton;
@@ -16,17 +16,17 @@ public class BaseNavigationActivity extends AppCompatActivity {
     protected Button nextButton;
     protected Button previousButton;
 
-    public void startDestinationActivity(Activity activity, Class<?> destination) {
+    protected void startDestinationActivity(Activity activity, Class<?> destination) {
         Intent intent = new Intent(activity, destination);
         startActivity(intent);
     }
 
-    public void setTextViewTitle(String title) {
+    protected void setTextViewTitle(String title) {
         titleTextView = (TextView) findViewById(R.id.activity_title_text);
         titleTextView.setText(title);
     }
 
-    public void setNavigationButtons(){
+    protected void setNavigationButtons(){
         firstButton = (Button) findViewById(R.id.first_button);
         secondButton = (Button) findViewById(R.id.second_button);
         thirdButton = (Button) findViewById(R.id.third_button);
@@ -34,6 +34,7 @@ public class BaseNavigationActivity extends AppCompatActivity {
         previousButton = (Button) findViewById(R.id.previous_button);
     }
 
+    protected abstract void disableButtons();
 
-
+    protected abstract void setOnClickListeners();
 }

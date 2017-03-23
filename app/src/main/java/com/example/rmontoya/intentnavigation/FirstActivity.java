@@ -19,12 +19,14 @@ public class FirstActivity extends BaseNavigationActivity implements View.OnClic
         disableButtons();
     }
 
-    private void disableButtons() {
+    @Override
+    protected void disableButtons() {
         previousButton.setEnabled(false);
         firstButton.setEnabled(false);
     }
 
-    private void setOnClickListeners() {
+    @Override
+    protected void setOnClickListeners() {
         secondButton.setOnClickListener(this);
         thirdButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
