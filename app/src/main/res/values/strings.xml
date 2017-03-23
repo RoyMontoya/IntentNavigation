@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">intentNavigation</string>
+    <string name="first_activity_button_text">First Act</string>
+    <string name="second_activity_button_text">Second Act</string>
+    <string name="third_activity_button_text">Third Act</string>
+    <string name="next_button"><![CDATA[Next >]]></string>
+    <string name="previous_button"><![CDATA[< Prev]]></string>
+    <string name="first_activity_title">First Activity</string>
+    <string name="third_activity_title">Third Activity</string>
+</resources>
