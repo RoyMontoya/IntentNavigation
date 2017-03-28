@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.example.rmontoya.intentnavigation.R;
 
 public abstract class BaseNavigationActivity extends AppCompatActivity {
+
     protected TextView titleTextView;
     protected Button firstButton;
     protected Button secondButton;
@@ -26,7 +27,7 @@ public abstract class BaseNavigationActivity extends AppCompatActivity {
         titleTextView.setText(title);
     }
 
-    protected void setNavigationButtons(){
+    protected void setNavigationButtons() {
         firstButton = (Button) findViewById(R.id.first_button);
         secondButton = (Button) findViewById(R.id.second_button);
         thirdButton = (Button) findViewById(R.id.third_button);
@@ -37,4 +38,5 @@ public abstract class BaseNavigationActivity extends AppCompatActivity {
     protected abstract void disableButtons();
 
     protected abstract void setOnClickListeners();
+
 }

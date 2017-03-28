@@ -13,15 +13,13 @@
         layout="@layout/navigation_buttons_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        />
+        android:layout_centerVertical="true" />
 
     <include
         layout="@layout/footer_buttons_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/standard_margin"
-        />
+        android:layout_marginBottom="@dimen/standard_margin" />
 
 </RelativeLayout>

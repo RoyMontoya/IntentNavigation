@@ -45,4 +45,5 @@ public class SecondActivity extends BaseNavigationActivity implements View.OnCli
                 break;
         }
     }
+
 }

@@ -44,4 +44,5 @@ public class ThirdActivity extends BaseNavigationActivity implements View.OnClic
                 break;
         }
     }
+
 }
