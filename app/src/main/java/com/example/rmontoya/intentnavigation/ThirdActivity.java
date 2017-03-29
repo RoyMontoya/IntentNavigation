@@ -12,11 +12,6 @@ public class ThirdActivity extends BaseNavigationActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setTextViewTitle(ACTIVITY_TITLE);
-        setNavigationButtons();
-        setOnClickListeners();
-        disableButtons();
     }
 
     @Override
@@ -30,6 +25,11 @@ public class ThirdActivity extends BaseNavigationActivity implements View.OnClic
         firstButton.setOnClickListener(this);
         secondButton.setOnClickListener(this);
         previousButton.setOnClickListener(this);
+    }
+
+    @Override
+    protected void setActivityTitle() {
+        titleTextView.setText(ACTIVITY_TITLE);
     }
 
     @Override
